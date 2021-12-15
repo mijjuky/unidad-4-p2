@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Unidad 4 - Ej. I</title>
+</head>
+<body>
+    <div id="box_pink"></div>
+    <div id="box_grey"></div>
+    <div id="box_red"></div>
+</body>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+        }
+        #box_pink {
+            background-color: pink;
+        }
+        #box_grey {
+            background-color: grey;
+        }
+        #box_red {
+            background-color: red;
+        }
+    </style>
+
+    <script>
+        document.getElementById("box_pink").addEventListener("click", function(e) {document.body.style.backgroundColor = "pink"});
+        document.getElementById("box_grey").addEventListener("click", function(e) {document.body.style.backgroundColor = "grey"});
+        document.getElementById("box_red").addEventListener("click", function(e) {document.body.style.backgroundColor = "red"});
+    </script>
+</html>
